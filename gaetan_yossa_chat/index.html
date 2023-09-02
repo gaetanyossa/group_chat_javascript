@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Chat - Accueil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jquery-3.1.7.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <script type="text/javascript" src="js/all.js"></script>
+  <script src="js/sweetalert2.all.js"></script>
+  
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script src="js/utilisateur.js"></script>
+  <script src="js/chat.js"></script>
+ 
+</head>
+<body>
+  <div class="container">
+    <h1>Quel est ton Chat?</h1>
+    <div id="chat-list" class="row"></div>
+    <form id="pseudo-form" class="mt-3">
+      <div class="form-group">
+        <label for="pseudo" class="pseudo" >
+          <i class="fas fa-user"></i> Pseudo :
+        </label>
+        <input type="text" class="form-control" id="pseudo" name="pseudo" required>
+      </div>
+      <button type="submit" class="btn btn-primary">
+        <i class="fas fa-paper-plane"></i> Rejoindre 
+      </button>
+    </form>
+  </div>
+
+  
+</body>
+</html>

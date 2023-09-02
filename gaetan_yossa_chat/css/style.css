@@ -1,0 +1,187 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#chat-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+}
+#send{
+  margin: 3px;
+}
+
+  /* Ajouter une largeur personnalisée pour le formulaire */
+  #pseudo-form,#chat-list {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+.chat-item {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  /* max-width: 300px; */
+  text-align: center;
+}
+
+#pseudo-form {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#pseudo-form label {
+  font-weight: bold;
+}
+
+#pseudo-form input[type="text"] {
+  padding: 5px;
+  margin: 10px;
+  width: 200px;
+}
+.pseudo{
+  
+  margin-left: -215px;
+}
+
+  /* Style pour l'en-tête */
+  h1 {
+    text-align: center;
+    margin-top: 50px;
+  }
+ 
+
+#pseudo-form .form-group {
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  color: #080808;
+  border: none;
+  border-radius: 5px;
+  height: 200px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+#pseudo-form button {
+  padding: 10px 20px;
+  background-color: #4bc0df;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: -110px;
+  margin-bottom: 10px;
+}
+
+#messages {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+ 
+  border-radius: 5px;
+  overflow-y: scroll;
+  height: 300px;
+  box-shadow: 0px 1px 4px #0a8bf9;
+  /* max-height:300px ; */
+}
+
+#message-form {
+  text-align: center;
+  margin-top: 20px;
+ 
+}
+
+#message-form input[type="text"] {
+  padding: 5px;
+  width: 400px;
+  outline: none !important;
+  box-shadow: none !important;
+  color: #3df700;
+  background-color: #000506;
+}
+
+#message-form button {
+  padding: 10px 20px;
+  background-color: #4bc0df;
+  color: #fff;
+  margin-left:4px;
+  max-height: 38px;
+  margin-top:-0.4px;
+  
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* formatage des messages dans le chat */
+.message-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Pour aligner les messages de l'utilisateur actuel à gauche */
+  margin-bottom: 10px;
+  
+  border-radius: 5px;
+  padding: 10px;
+  
+}
+
+.message-user {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.message-icons {
+  display: flex;
+  align-items: center;
+}
+
+.edit-icon,
+.delete-icon {
+  font-size: 18px;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.3s;
+  margin-right: 5px;
+  transition: transform 0.3s ease;
+}
+
+
+.delete-icon:hover {
+  color: #ed0909;
+  transform: scale(1.2);
+}
+.edit-icon:hover{
+  color: #09eda5;
+  transform: scale(1.2);
+}
+.message-icons i {
+  cursor: pointer;
+  margin-left: 5px;
+  color: #777;
+  transition: color 0.3s;
+}
+
+.message-content {
+  background-color: #F1F1F1;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+.message-content, message-timestamp{
+display: inline;
+}
+.message-timestamp {
+  font-size: 12px;
+  color: #888888;
+  align-self: flex-end;
+}
